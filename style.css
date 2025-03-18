@@ -1,15 +1,25 @@
-html, body {
+html {
     background-color: #000000;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
  button {
     width: 80px;
     height: 40px;
     background-color: #A9A9A9;
     color: black;
     cursor: pointer;
+    margin: 2px;
+    transition: background 0.3s;
  }
 
 .container {
@@ -20,20 +30,24 @@ html, body {
 }
 
 .divs {
+    overflow: auto;
     flex: 1;
     padding: 20px;
-    width: 30%;
+    width: 50%;
     padding: 20px;
     background-color: white;
     color: black;
     text-align: center;
     box-sizing: border-box;
+    transition: background 0.3s color 0.3s;
 }
 .divs img {
     height: auto;
     min-width: 100px;
     max-width: 150px;
 }
+
+
 .BTST dt {
     font-weight: bold;
     font-size: 20px;
@@ -48,10 +62,11 @@ html, body {
 }
 
 .verticalbar {
-    width: 1px;
-    height: 90px;
-    background-color: #000000;
-    margin: 50px
+    width: 0.1%;
+    height: 100%;
+    margin: 50px;
+    background-color: black;
+    border: 1.0px solid #2A2A2A;
 }
 
 .logodiv {
@@ -74,4 +89,41 @@ html, body {
     border: 1.5px solid #ffffff;
 }
 
+.roundbutton {
+     width: 80px;
+    height: 40px;
+    background-color: #A9A9A9;
+    color: black;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+}
 
+.lightmode {
+    background:  white;
+    color: black;
+}
+.lightmode .divs {
+    background: white ;
+    color: black;
+}
+
+
+.darkmode {
+    background: black ;
+    color: white;
+}
+.darkmode .divs {
+    background: black;
+    color: white;
+}
+
+.lightmode button {
+    background: #222;
+    color: #fff;
+}
+
+.darkmode button {
+    background: #f0f0f0;
+    color: #222;
+}
